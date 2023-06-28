@@ -35,44 +35,32 @@
       padding: 20px;
       text-align: center;
     }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    nav ul li {
-      display: inline;
-      margin-right: 10px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-    }
   </style>
 </head>
 <body>
   <header>
     <h1>Philippe Priolet</h1>
     <p>Astronomer & Astrophysicist</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="education.html">Education</a></li>
-      </ul>
-    </nav>
   </header>
-  
-  <!-- About Page -->
-  <main id="about">
+  <main>
     <h2>About Me</h2>
     <p>
       Welcome to my website! I am Philippe Priolet, an astronomer and astrophysicist specializing in the study of exozodiacal dust.
     </p>
-    <!-- Add more about me content if needed -->
-  </main>
-  
-  <!-- Publications Page -->
-  <main id="publications" style="display: none;">
+    <p>
+      I have a passion for unraveling the mysteries of exozodiacal dust and its implications for understanding planetary systems beyond our own. My research focuses on using advanced observational techniques and modeling to investigate the properties, distribution, and origins of exozodiacal dust clouds.
+    </p>
+    <p>
+      Through my work, I aim to contribute to our understanding of planetary formation and evolution, the potential habitability of exoplanets, and the search for extraterrestrial life.
+    </p>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Exozodiacal dust</li>
+      <li>Planetary systems</li>
+      <li>Protoplanetary disks</li>
+      <li>Extrasolar planets</li>
+      <li>Stellar occultations</li>
+    </ul>
     <h2>Publications</h2>
     <ul>
       <li>Publication 1</li>
@@ -80,44 +68,16 @@
       <li>Publication 3</li>
       <!-- Add more publications as needed -->
     </ul>
+    <h2>Contact Information</h2>
+    <p>
+      Feel free to reach out to me for collaborations, inquiries, or any other questions:
+    </p>
+    <p>Email: [email protected]</p>
+    <p>Phone: +1 123-456-7890</p>
   </main>
-  
-  <!-- Education Page -->
-  <main id="education" style="display: none;">
-    <h2>Education</h2>
-    <p>Ph.D. in Astrophysics, University Name, Year</p>
-    <p>M.Sc. in Physics, University Name, Year</p>
-    <p>B.Sc. in Astronomy, University Name, Year</p>
-    <!-- Add more educational content if needed -->
-  </main>
-  
   <footer>
     <p>&copy; 2023 Philippe Priolet. All rights reserved.</p>
   </footer>
-  
-  <script>
-    // Function to show/hide the pages based on the navigation link clicked
-    function showPage(pageId) {
-      var pages = document.querySelectorAll("main");
-      for (var i = 0; i < pages.length; i++) {
-        pages[i].style.display = "none";
-      }
-      var page = document.getElementById(pageId);
-      if (page) {
-        page.style.display = "block";
-      }
-    }
-    
-    // Event listeners for navigation links
-    document.querySelector("nav ul li:nth-child(1) a").addEventListener("click", function() {
-      showPage("about");
-    });
-    document.querySelector("nav ul li:nth-child(2) a").addEventListener("click", function() {
-      showPage("publications");
-    });
-    document.querySelector("nav ul li:nth-child(3) a").addEventListener("click", function() {
-      showPage("education");
-    });
-  </script>
 </body>
 </html>
+
